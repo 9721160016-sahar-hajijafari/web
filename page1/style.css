@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "Persian";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Persian.ttf"), url("./Persian.ttf") format("truetype");
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  direction: rtl;
+  background-image: linear-gradient(to right, #89fffd, #ef32d9);
+  padding: 30px auto;
+  padding-top: 30px;
+}
+
+.main {
+  background-color: #ffffff;
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 15%);
+  height: 246px;
+  display: flex;
+  max-width: 1300px;
+  margin: 0px auto;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  font-family: "Persian";
+}
+.item {
+  border: 1px solid #f2f2f2;
+  width: 25%;
+  padding: 10px;
+}
+.item:nth-of-type(1) {
+  border-radius: 0px 10px 10px 0px;
+}
+.item:nth-of-type(4) {
+  border-radius: 10px 0px 0px 10px;
+}
+@media only screen and (max-width: 1300px) {
+  .main {
+    width: 1000px;
+    height: 260px;
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .main {
+    height: 520px;
+    width: 600px;
+  }
+  .item {
+    width: 50%;
+  }
+  .item:nth-of-type(1) {
+    border-radius: 0px 10px 0px 0px;
+  }
+  .item:nth-of-type(2) {
+    border-radius: 10px 0px 0px 0px;
+  }
+  .item:nth-of-type(3) {
+    border-radius: 0px 0px 10px 0px;
+  }
+  .item:nth-of-type(4) {
+    border-radius: 0px 0px 0px 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main {
+    flex-direction: column;
+    height: 660px;
+    flex-wrap: nowrap;
+    width: 300px;
+    font-size: 0.6em;
+  }
+  .item {
+    width: 100%;
+  }
+  .item:nth-of-type(1) {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .item:nth-of-type(2) {
+    border-radius: 0px;
+  }
+  .item:nth-of-type(3) {
+    border-radius: 0px;
+  }
+  .item:nth-of-type(4) {
+    border-radius: 0px 0px 10px 10px;
+  }
+}
+@media print {
+  .main {
+    height: 520px;
+    width: 600px;
+  }
+  .item {
+    width: 50%;
+  }
+  .item:nth-of-type(1) {
+    border-radius: 0px 10px 0px 0px;
+  }
+  .item:nth-of-type(2) {
+    border-radius: 10px 0px 0px 0px;
+  }
+  .item:nth-of-type(3) {
+    border-radius: 0px 0px 10px 0px;
+  }
+  .item:nth-of-type(4) {
+    border-radius: 0px 0px 0px 10px;
+  }
+}
